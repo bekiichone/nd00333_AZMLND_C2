@@ -1,12 +1,17 @@
 *NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
 
-# Your Project Title Here
+# Azure MLE Project 2: Operationilizing Machine Learning
 
-*TODO:* Write an overview to your project.
+In this project I have deployed model and pipeline and made possible to send API requests with JSON payloads. The deployed model was the best model chosen by Auto ML run. Overall, I have learned the model deployment and documentation process as well as how to deploy pipeline. Challenging part was to comprehend the step by step process of deploying a pipeline, since it consists of a handful of steps and libraries. 
 
 ## Architectural Diagram
-*TODO*: Provide an architectual diagram of the project and give an introduction of each step. An architectural diagram is an image that helps visualize the flow of operations from start to finish. In this case, it has to be related to the completed project, with its various stages that are critical to the overall flow. For example, one stage for managing models could be "using Automated ML to determine the best model". 
+!['Proof'](https://github.com/bekiichone/nd00333_AZMLND_C2/blob/master/sample_screenshots/project%202%20architecture.jpg)
+Model and Pipeline deployment processes consist of essentially similar steps, yet there are subtle differences. Before any experimetns we have to create Compute Cluster and Compute Instance for notebooks and experiments to be able to run. 
+
+For Model deployment, we upload dataset to Workspace and create AutoML Run (experiment will be created automatically). After AutoML is finished, we deploy the best model of AutoML. After deployment is finished we can consume the endpoint by sending http requests onto REST url. 
+
+For Pipeline deployment, we first create an experiment in existing Workspace. Then attach an already created cluster to it, so that we can run pipeline. In the notebook, we load the dataset and configure the AutoML run. Next we create an AutoMLStep where we pass AutoMLConfig. Then we create a pipeline consisting of Steps we created before. Then we submit created Pipeline to the Experiment. After Training is finihsed we can publish it to the workspace. Finally, we have to retrieve auth_header in order to access the endpoint for consumption. 
 
 ## Key Steps
 *TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
