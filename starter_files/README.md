@@ -39,7 +39,7 @@ Finally, we can now send requests to deployed model and retrieve response. Below
 
 !['Proof'](https://github.com/bekiichone/nd00333_AZMLND_C2/blob/master/sample_screenshots/8%20endpoint%20py%20result.png)
 
-## Pipeline Deployment
+### Pipeline Deployment
 
 The key step in pipeline deployment is constructing one. The pipeline constists of steps to run (in our case it was AutoMLStep). After the pipeline is submitted to experiment and completed, we can publish it. Below figures show the pipeline run and its endpoint. 
 
