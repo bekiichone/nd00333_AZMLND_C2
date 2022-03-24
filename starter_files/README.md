@@ -1,6 +1,3 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
-
 # Azure MLE Project 2: Operationilizing Machine Learning
 
 In this project I have deployed model and pipeline and made possible to send API requests with JSON payloads. The deployed model was the best model chosen by Auto ML run. Overall, I have learned the model deployment and documentation process as well as how to deploy pipeline. Challenging part was to comprehend the step by step process of deploying a pipeline, since it consists of a handful of steps and libraries. 
