@@ -57,7 +57,9 @@ In the notebook sometimes it might be crucial to track the pipeline run progress
 
 !['Proof'](https://github.com/bekiichone/nd00333_AZMLND_C2/blob/master/sample_screenshots/13%20RunDetails%20Widget.png) 
 
+## Future Improvements
 
+For now our pipeline consists of only 2 modules. As a potential improvement could be an addition of feature engineering step. Definately there should be some exploratory data analysis done prior to any modelling since it might bring some valuable insights about data. I assume dataset is clean, but in reality datasets are rarely clean, so a data cleaning step should added. 
 
 ## Screen Recording
 https://www.youtube.com/watch?v=DD4tE6SZjnw
